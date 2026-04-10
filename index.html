@@ -4,36 +4,123 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Berkan Akahısha - İletişim</title>
+<meta name="color-scheme" content="dark">
 <style>
-:root{--bg:#0b0f14;--card:#121826;--txt:#e6edf3;--muted:#9aa4b2;--btn:#1f6feb;--btn2:#2ea043;--btn3:#8b5cf6;}
-*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
-body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(1200px 600px at 20% 10%,#1a2640 0%,var(--bg) 55%);color:var(--txt);}
-.card{width:min(520px,92vw);background:linear-gradient(180deg,#141b2d, var(--card));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:22px;box-shadow:0 20px 60px rgba(0,0,0,.45);}
-h1{font-size:22px;margin:0 0 6px;}
-p{margin:0 0 18px;color:var(--muted);}
-.grid{display:grid;gap:12px;}
-a.btn{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;color:white;font-weight:700;
-padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.12);}
-a.btn:active{transform:translateY(1px);}
-.btn-call{background:linear-gradient(180deg,#2ea043,#1f7a36);}
-.btn-wa{background:linear-gradient(180deg,#25D366,#128C7E);}
-.btn-mail{background:linear-gradient(180deg,#7c3aed,#5b21b6);}
-.small{margin-top:14px;font-size:12px;color:var(--muted);line-height:1.4}
-code{background:rgba(255,255,255,.08);padding:2px 6px;border-radius:8px;}
+:root{
+  --bg:#0b0f14;
+  --card:#121826;
+  --txt:#e6edf3;
+  --muted:#9aa4b2;
+  --border:rgba(255,255,255,.08);
+  --btn1:#1f6feb;
+  --btn2:#2ea043;
+  --btn3:#8b5cf6;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  min-height:100dvh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background:radial-gradient(1200px 600px at 20% 10%, #1a2640 0%, var(--bg) 55%);
+  color:var(--txt);
+}
+.card{
+  width:min(520px,92vw);
+  background:linear-gradient(180deg,#141b2d, var(--card));
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:24px;
+  box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.plate{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 0 16px;
+  padding:10px 16px;
+  border-radius:12px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  font-size:24px;
+  font-weight:800;
+  letter-spacing:2px;
+  line-height:1;
+  color:#ffffff;
+}
+h1{
+  font-size:23px;
+  margin:0 0 6px;
+  font-weight:700;
+}
+p{
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:15px;
+}
+.grid{
+  display:grid;
+  gap:12px;
+}
+a.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:700;
+  padding:14px 16px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  transition:transform .15s ease, filter .15s ease, box-shadow .15s ease;
+  box-shadow:0 8px 20px rgba(0,0,0,.18);
+}
+a.btn:hover{
+  filter:brightness(1.05);
+}
+a.btn:active{
+  transform:translateY(1px);
+}
+a.btn:focus-visible{
+  outline:2px solid #fff;
+  outline-offset:3px;
+}
+.btn-call{
+  background:linear-gradient(180deg,#2ea043,#1f7a36);
+}
+.btn-wa{
+  background:linear-gradient(180deg,#25D366,#128C7E);
+}
+.btn-mail{
+  background:linear-gradient(180deg,#7c3aed,#5b21b6);
+}
+.small{
+  margin-top:16px;
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.5;
+}
 </style>
 </head>
 <body>
-<div class="card">
-  <h1>Berkan Akahısha</h1>
-  <p>İletişim seçenekleri</p>
-  <div class="grid">
-    <a class="btn btn-call" href="tel:+905350444561" aria-label="Ara">📞 Ara</a>
-    <a class="btn btn-wa" href="https://wa.me/905350444561?text=Merhaba%20Berkan%2C" aria-label="WhatsApp">💬 WhatsApp'tan yaz</a>
-    <a class="btn btn-mail" href="mailto:berkan.akahisha@gmail.com?subject=Merhaba&body=Merhaba%20Berkan%2C" aria-label="Mail">✉️ Mail gönder</a>
+  <div class="card">
+    <div class="plate">34 PNZ 746</div>
+    <h1>Berkan Akahısha</h1>
+    <p>İletişim seçenekleri</p>
+
+    <div class="grid">
+      <a class="btn btn-call" href="tel:+905350444561" aria-label="Ara">📞 Ara</a>
+      <a class="btn btn-wa" href="https://wa.me/905350444561?text=Merhaba%20Berkan%2C" aria-label="WhatsApp">💬 WhatsApp'tan yaz</a>
+      <a class="btn btn-mail" href="mailto:berkan.akahisha@gmail.com?subject=Merhaba&body=Merhaba%20Berkan%2C" aria-label="Mail">✉️ Mail gönder</a>
+    </div>
+
+    <div class="small">
+      Araç ile ilgili ulaşım sağlamak için yukarıdaki iletişim yöntemlerinden birini seçebilirsiniz.
+    </div>
   </div>
-  <div class="small">
-    Not: Bana ulaşmak için yukarıdaki iletişim yöntemlerinden birini seçebilirsiniz.
-  </div>
-</div>
 </body>
 </html>
